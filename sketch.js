@@ -117,13 +117,13 @@ function draw() {
   slingShot.display();
 }
 function mouseDragged(){
-  Matter.Body.setPosition(this.ball,{x:mouseX,y:mouseY});
+  Matter.Body.setPosition(ball,{x:mouseX,y:mouseY});
 }
 function mouseReleased(){
   slingShot.fly();
 }
 function keyPressed(){
   if(keyCode===32)
-  Matter.Body.setPosition(ball.body,{x:200,y:50});
-  slingshot.attach(ball.body);
+  Matter.Body.setPosition(ball,{x:200,y:50});
+  slingShot.attach(ball);
 }
